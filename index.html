@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Immgen Datasets</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+	<link href="https://cdn.datatables.net/plug-ins/1.10.9/features/searchHighlight/dataTables.searchHighlight.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+  <div class = "header">
+    <div class = "logo">
+      <img src = "assets/DatasetsBannernotext.svg" class = "logo">
+    </div>
+      <h1 class = "hed">Immgen Datasets</h1>
+      <!-- <h3 class = "instruct">Please type keywords to finda a specific dataset.</h3> -->
+  </div>
+
+
+  <div class = "instruct">
+    <h3 class = "instruct">The ImmGen data and browsers are developed as a general resource for the community, principally supported by funds from the NIAID/NIH.
+      All datasets can be downloaded from NCBI’s GEO and SRA data repositories. This searchable table provides links to all ImmGen data series.</h3>
+
+
+  </div>
+
+    <div class = "search">
+      <div class = "input-group">
+      <div class="input-group-addon"><i class="fa fa-search"></i></div>
+      <input type = "text" id = "myInputText" class="form-control ng-pristine ng-untouched ng-valid" placeholder="Search" ng-model="searchFish">
+    </div>
+
+  </div>
+
+
+
+<div class = "panel-body">
+
+<div class = "dropdown">
+<label class = "label_data">Type of Data:</label>
+<div class = "datatypes" id ="drop_menu"></div>
+</div>
+
+  <div id="dataPage_panel"><!--style="display:none"-->
+    <table id = "dataPage_table" class = "display" width = "100%">
+
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Data Types</th>
+          <th>GEO Accession</th>
+          <!-- <th>Geo Accession Link</th> -->
+          <th>Description</th>
+          <th>Cell Types</th>
+          <th>Pubmed</th>
+          <th>Normalized Tables</th>
+          <th>Raw Gene Count Table</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Name</th>
+          <th>Data Types</th>
+          <th>GEO Accession</th>
+          <!-- <th>Geo Accession Link</th> -->
+          <th>Description</th>
+          <th>Cell Types</th>
+          <th>Pubmed</th>
+          <th>Normalized Tables</th>
+          <th>Raw Gene Count Table</th>
+
+
+        </tr>
+      </tfoot>
+    </table>
+
+  </div>
+</div>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script type='text/javascript' src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script src="https://bartaz.github.io/sandbox.js/jquery.highlight.js"></script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.9/features/searchHighlight/dataTables.searchHighlight.min.js"></script>
+  <script  src = "https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+
+  <script src = "https://bartaz.github.io/sandbox.js/jquery.highlight.js"></script>
+
+  <script  src = "https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+  <script  src = "https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+  <script type = "text/javascript" src = "main.js"></script>
+</body>
+</html>
